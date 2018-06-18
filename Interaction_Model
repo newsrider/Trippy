@@ -1,0 +1,237 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "trippy",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop",
+                        "enough"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "No",
+                        "Nah",
+                        "Nope"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "Yes",
+                        "Yeah",
+                        "Yep"
+                    ]
+                },
+                {
+                    "name": "TakemeIntent",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "I want to go to {eur_city}",
+                        "I want to know more about {eur_city}",
+                        "Tell me about {eur_city}",
+                        "take me to {eur_city}",
+                        "take me to porto"
+                    ]
+                },
+                {
+                    "name": "launch",
+                    "slots": [],
+                    "samples": [
+                        "Alexa open trippy"
+                    ]
+                },
+                {
+                    "name": "AMAZON.SearchAction<object@MusicCreativeWork>",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ChooseAction<object@MusicPlaylist>",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Music",
+                    "slots": [
+                        {
+                            "name": "lala",
+                            "type": "AMAZON.MusicCreativeWorkType"
+                        }
+                    ],
+                    "samples": [
+                        "Play {lala}"
+                    ]
+                },
+                {
+                    "name": "BookIntent",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "What book can I read for {eur_city}"
+                    ]
+                },
+                {
+                    "name": "FirstActIntent",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "What can I do in {eur_city}",
+                        "Tell me things to do in {eur_city}"
+                    ]
+                },
+                {
+                    "name": "FoodIntent",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "What are good eats in {eur_city}",
+                        "What food can I get in {eur_city}",
+                        "Give me food recommendations for {eur_city}"
+                    ]
+                },
+                {
+                    "name": "flight",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "flight info for {eur_city} please",
+                        "flight for {eur_city}",
+                        "flight info for {eur_city}"
+                    ]
+                },
+                {
+                    "name": "planesoundIntent",
+                    "slots": [],
+                    "samples": [
+                        "plane please"
+                    ]
+                },
+                {
+                    "name": "HotelIntent",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "hotel {eur_city}",
+                        "Where should I stay in {eur_city}"
+                    ]
+                },
+                {
+                    "name": "SecondActIntent",
+                    "slots": [
+                        {
+                            "name": "eur_city",
+                            "type": "AMAZON.EUROPE_CITY"
+                        }
+                    ],
+                    "samples": [
+                        "Where should I go in {eur_city}",
+                        "What should I see in {eur_city}",
+                        "What can I do in {eur_city}"
+                    ]
+                },
+                {
+                    "name": "planesoundNoIndentent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "another_city",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "back_Intent",
+                    "slots": [],
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.EUROPE_CITY",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Porto"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Galapagos"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TrippyCity",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Tokyo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Casablanca"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Galápagos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "porto"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
